@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class MyAccountPage extends LoadableComponent<MyAccountPage> {
 	@FindBy (xpath ="//button[text()='Register']")
 	WebElement registerLink;
-	
+	Logger log;
 	private WebDriver driver;
 	private WebDriverWait wait;
 
@@ -27,13 +28,15 @@ public class MyAccountPage extends LoadableComponent<MyAccountPage> {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		log = Logger.getLogger(MyAccountPage.class.getName());
 		get();
 	}
 	
 
 	public RegistrationPage navigateToRegisterPage() {
+		log.info("Clicking the registration link");
 		registerLink.click();
-		System.out.println("after register click");
+		log.info("After registeration click");
 		return new RegistrationPage(driver);
 	}
 	

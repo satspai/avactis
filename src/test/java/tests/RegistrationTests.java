@@ -11,13 +11,13 @@ import utils.DataProviders;
 public class RegistrationTests extends BaseTest{
 	StoreHomePage storeHomePage;
 	
-	//@Test
+	@Test
 	public void navigateToSignInPage() {
 		storeHomePage.naviagetToSignInPage();
 	}
 	
 	
-	@Test(dataProvider = "dataFromXLS", dataProviderClass = DataProviders.class)
+	//@Test(dataProvider = "dataFromXLS", dataProviderClass = DataProviders.class)
 	public void registerNewUser(String email,String pass, String repass, String fristName, String lastName) {
 		System.out.println(email +"  "+  pass);
 		storeHomePage.navigateToMyAccountPage()

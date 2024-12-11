@@ -4,7 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
 import java.util.List;
-
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +18,8 @@ import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class StoreHomePage extends BasePage {
+	Logger log;
+	
 	@FindBy (xpath ="//a[text()='Sign In']")
 	WebElement signInLink;
 	
@@ -27,12 +30,17 @@ public class StoreHomePage extends BasePage {
 	public StoreHomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
+		DOMConfigurator.configure("log4j-config.xml");
+		log = Logger.getLogger(StoreHomePage.class.getName());
 		get();
 	}
 	
 
 	public void naviagetToSignInPage() {
+		log.trace("Before the sign-in link click");
 		signInLink.click();
+		log.trace("After the sign-in link click");
+
 	}
 	
 	public MyAccountPage navigateToMyAccountPage() {

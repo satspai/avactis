@@ -6,7 +6,7 @@
       <class name="tests.RegistrationTests">
         <methods>
           <include name="beforeMethod"/>
-          <include name="registerNewUser"/>
+          <include name="navigateToSignInPage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

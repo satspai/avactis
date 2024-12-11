@@ -1,5 +1,7 @@
-C:\Users\hisat\eclipse-workspace\Avactis\src\test\java\Pages\MyAccountPage.java
-C:\Users\hisat\eclipse-workspace\Avactis\src\test\java\Pages\RegistrationPage.java
-C:\Users\hisat\eclipse-workspace\Avactis\src\test\java\Pages\StoreHomePage.java
-C:\Users\hisat\eclipse-workspace\Avactis\src\test\java\Tests\RegisterTests.java
-C:\Users\hisat\eclipse-workspace\Avactis\src\test\java\Utils\DataProviders.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\pages\BasePage.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\pages\MyAccountPage.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\pages\RegistrationPage.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\pages\StoreHomePage.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\tests\BaseTest.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\tests\RegistrationTests.java
+C:\Users\hisat\eclipse-workspace\avactis\src\test\java\utils\DataProviders.java
