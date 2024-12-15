@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class BasePage extends LoadableComponent<BasePage>  {
 	protected WebDriver driver;
 	protected WebDriverWait wait;
-	
+
 	//constructor
 	public BasePage(WebDriver driver) {
 		this.driver = driver;

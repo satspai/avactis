@@ -33,34 +33,34 @@ public class DataProviders {
 		Object[][] dataFromXLS = readDataFromXLS("src/test/resources/data/dataxls1.xls", "login", "Marker");
 		return dataFromXLS;
 	}
-	
+
 	@DataProvider(name = "dataFromXLSX")
 	public Object[][] provideDataFromXLSX() throws IOException {
 		Object[][] dataFromXLS = readDataFromXLSX("src/test/resources/data/dataxls.xlsx");
 		return dataFromXLS;
 	}
-	
+
 	@DataProvider(name = "dataFromCSV")
 	public Iterator providesDataFromCSV() throws IOException {
 		Collection<String[]> returnData = getTestDataFromCSV("src/test/resources/data/datacsv.csv");
 		return returnData.iterator();
 	}
-	
+
 	@DataProvider(name = "dataFromOpenCSV")
 	public Iterator providesDataFromOpenCSV() throws IOException, CsvException {
 		Collection<String[]> returnData = getTestDataFromOpenCsv("src/test/resources/data/datacsv.csv");
 		return returnData.iterator();
 	}
-	
+
 	@DataProvider(name = "dataFromDB")
 	public Iterator providesDataFromDB() throws Exception {
 		Collection<String[]> returnData = getTestDataFromDB("Select * from customer_details");
 		return returnData.iterator();
 	}
 
-	
+
 	public static Collection<String[]> getTestDataFromCSV(String fileName) throws IOException {
-		List<String[]> records = new ArrayList<String[]>(); // arraylist of array of string is two dim arraylist
+		List<String[]> records = new ArrayList<>(); // arraylist of array of string is two dim arraylist
 
 		String record;
 		// FileReader is meant for reading streams of characters(reading text files)
@@ -77,22 +77,22 @@ public class DataProviders {
 		file.close();
 		return records;
 	}
-	
+
 	/*
-	 * Logic 
-	 * - reading the file - Workbook 
+	 * Logic
+	 * - reading the file - Workbook
 	 * - Reading a particular sheet - Search for the first occurence of marker "NTStartEnd". Note down the rows and
-	 * columns(1,2) 
-	 * - Search for the next offcurenence of marker "NTStartEnd". Note down the rows and columns (4,7) 
-	 * - subtract second occured row from the first - (4-1-1, 7-2-1) = (2,4) 
-	 * - Create two dim array of String which is of size [4,2] 
-	 * - Now read one cell at a time from XLS and copy into the array. 
-	 * b[0][0] = "stc123", b[0][1] = "12345" 
+	 * columns(1,2)
+	 * - Search for the next offcurenence of marker "NTStartEnd". Note down the rows and columns (4,7)
+	 * - subtract second occured row from the first - (4-1-1, 7-2-1) = (2,4)
+	 * - Create two dim array of String which is of size [4,2]
+	 * - Now read one cell at a time from XLS and copy into the array.
+	 * b[0][0] = "stc123", b[0][1] = "12345"
 	 * b[1][0] = testing, b[1][1] = "testing"
 	 * ....
-	 * 
+	 *
 	 * - Return the array to data provider
-	 * 
+	 *
 	 */
 	public String[][] readDataFromXLS(String xlFilePath, String sheetName, String marker) {
 		String[][] tabArray = null;
@@ -138,16 +138,16 @@ public class DataProviders {
 	}
 
 	public static Collection<String[]> getTestDataFromDB(String sqlQuery) throws Exception {
-		ArrayList<String[]> records = new ArrayList<String[]>();
+		ArrayList<String[]> records = new ArrayList<>();
 
 		/*
 		 * Windows - You need to install the MySQL DB - Login credentials - You need to
 		 * know - create a DB - You need to create tables in your DB
-		 * 
+		 *
 		 * Java ( - You need DB driver - jar file - Load the DB driver - Connect to the
 		 * DB
-		 * 
-		 * 
+		 *
+		 *
 		 * Common for all the DBs - Fire the SQL query - Read the result and pass it to
 		 * Data provder in an two dim array
 		 */
@@ -195,7 +195,7 @@ public class DataProviders {
 
 		return records;
 	}
-	
+
 	public  String[][] readDataFromXLSX(String filePath) throws IOException {
         // Create a FileInputStream to read the Excel file
         FileInputStream file = new FileInputStream(new File(filePath));
@@ -244,8 +244,8 @@ public class DataProviders {
 
         return data;
     }
-	
-	
+
+
 	public static List<String[]> getTestDataFromOpenCsv(String filePath) throws CsvException {
         List<String[]> csvData = null;
         try (CSVReader reader = new CSVReader(new FileReader(filePath))) {

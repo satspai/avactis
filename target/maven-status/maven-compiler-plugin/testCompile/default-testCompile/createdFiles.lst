@@ -1,1 +1,8 @@
+pages\BasePage.class
+tests\RegistrationTests.class
+pages\StoreHomePage.class
+pages\RegistrationPage.class
+tests\BaseTest.class
+utils\DataProviders.class
 utils\DataProviders$1.class
+pages\MyAccountPage.class

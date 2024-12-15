@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T20:47:27 GMT" name="Default suite" finished-at="2024-12-11T20:47:39 GMT" duration-ms="11930">
+  <suite started-at="2024-12-11T21:38:38 GMT" name="Default suite" finished-at="2024-12-11T21:38:47 GMT" duration-ms="8732">
     <groups>
     </groups>
-    <test started-at="2024-12-11T20:47:27 GMT" name="Default test" finished-at="2024-12-11T20:47:39 GMT" duration-ms="11930">
+    <test started-at="2024-12-11T21:38:38 GMT" name="Default test" finished-at="2024-12-11T21:38:47 GMT" duration-ms="8732">
       <class name="tests.RegistrationTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationTests@7eac9008]" started-at="2024-12-11T20:47:27 GMT" name="setUp" finished-at="2024-12-11T20:47:35 GMT" duration-ms="8188" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationTests@7eecb5b8]" started-at="2024-12-11T21:38:38 GMT" name="setUp" finished-at="2024-12-11T21:38:43 GMT" duration-ms="5626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.RegistrationTests@7eac9008]" started-at="2024-12-11T20:47:35 GMT" name="beforeMethod" finished-at="2024-12-11T20:47:36 GMT" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.RegistrationTests@7eecb5b8]" started-at="2024-12-11T21:38:44 GMT" name="beforeMethod" finished-at="2024-12-11T21:38:44 GMT" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="navigateToSignInPage()[pri:0, instance:tests.RegistrationTests@7eac9008]" started-at="2024-12-11T20:47:36 GMT" name="navigateToSignInPage" finished-at="2024-12-11T20:47:39 GMT" duration-ms="3138" status="PASS">
+        <test-method signature="navigateToSignInPage()[pri:0, instance:tests.RegistrationTests@7eecb5b8]" started-at="2024-12-11T21:38:44 GMT" name="navigateToSignInPage" finished-at="2024-12-11T21:38:46 GMT" duration-ms="2513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToSignInPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTests@7eac9008]" started-at="2024-12-11T20:47:39 GMT" name="tearDown" finished-at="2024-12-11T20:47:39 GMT" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTests@7eecb5b8]" started-at="2024-12-11T21:38:46 GMT" name="tearDown" finished-at="2024-12-11T21:38:47 GMT" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
