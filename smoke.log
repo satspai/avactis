@@ -1,0 +1,4 @@
+2024-12-18 21:36:16,267 TRACE [main] (StoreHomePage.java:33) - Praparing to sign in
+2024-12-18 21:36:17,646 TRACE [main] (StoreHomePage.java:35) - After the sign-in click
+2024-12-18 21:36:53,325 INFO  [main] (MyAccountPage.java:30) - Clicking the registration link
+2024-12-18 21:36:55,008 INFO  [main] (MyAccountPage.java:32) - After registeration click

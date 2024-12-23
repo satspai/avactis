@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.NameGenerator;
+
 public class RegistrationPage extends LoadableComponent<RegistrationPage> {
 	@FindBy (xpath ="//input[@name='customer_info[Customer][Email]']")
 	WebElement txtEmail;
@@ -43,7 +45,8 @@ public class RegistrationPage extends LoadableComponent<RegistrationPage> {
 
 
 	public RegistrationPage populateDetails(String email, String pass, String repass, String firstname, String lastname) {
-		txtEmail.sendKeys(email);
+		//txtEmail.sendKeys(email);
+		txtEmail.sendKeys(NameGenerator.generateRandomEmail());
 		txtPassword.sendKeys(pass);
 		txtRePassword.sendKeys(repass);
 		txtFirstName.sendKeys(firstname);
