@@ -1,23 +1,15 @@
-@tag
-Feature: Sign in navigation
-  I want to use this template for my feature file
+@registration
+Feature: New user registration
 
-  @tag1
-  Scenario: User navigates to sign in page
+  @registerpositive
+  Scenario: User registration successful
     Given user is on store home page
-    When user navigates to signin page
-    #And some other action
-    #And yet another action
-    #Then I validate the outcomes
-    #And check more outcomes
+    When user navigates to registration page and registers with new data
+    Then user should see the registration confirmation message
 
-  #@tag2
-  #Scenario Outline: Title of your scenario outline
-   # Given I want to write a step with <name>
-    #When I check for the <value> in step
-    #Then I verify the <status> in step
+	@registernegative
+  Scenario: User registration unsuccessful
+    Given user is on store home page
+    When user navigates to registration page and registers with new data
+    Then user should see the registration error message
 
-    #Examples: 
-     # | name  | value | status  |
-      #| name1 |     5 | success |
-      #| name2 |     7 | Fail    |

@@ -71,4 +71,25 @@ public class RegistrationPage extends LoadableComponent<RegistrationPage> {
 	protected void load() {
 	}
 
+
+	public RegistrationPage populateMandatoryNewDetails() {
+		txtEmail.sendKeys(NameGenerator.generateRandomEmail());
+		txtPassword.sendKeys("password");
+		txtRePassword.sendKeys("password");
+		txtFirstName.sendKeys(NameGenerator.getRandomFirstName());
+		txtLastName.sendKeys(NameGenerator.getRandomLastName());
+		btnSubmit.click();
+		return this;		
+	}
+	
+	public RegistrationPage populateMandatoryExistingDetails() {
+		txtEmail.sendKeys(NameGenerator.generateRandomEmail());
+		txtPassword.sendKeys("password");
+		txtRePassword.sendKeys("password");
+		txtFirstName.sendKeys(NameGenerator.getRandomFirstName());
+		txtLastName.sendKeys(NameGenerator.getRandomLastName());
+		btnSubmit.click();
+		return this;		
+	}
+
 }
