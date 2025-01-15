@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.ConfigReader;
 import utils.NameGenerator;
 
 public class RegistrationPage extends LoadableComponent<RegistrationPage> {
@@ -74,8 +75,8 @@ public class RegistrationPage extends LoadableComponent<RegistrationPage> {
 
 	public RegistrationPage populateMandatoryNewDetails() {
 		txtEmail.sendKeys(NameGenerator.generateRandomEmail());
-		txtPassword.sendKeys("password");
-		txtRePassword.sendKeys("password");
+		txtPassword.sendKeys(ConfigReader.getProperty("success.password"));
+		txtRePassword.sendKeys(ConfigReader.getProperty("success.password"));
 		txtFirstName.sendKeys(NameGenerator.getRandomFirstName());
 		txtLastName.sendKeys(NameGenerator.getRandomLastName());
 		btnSubmit.click();
@@ -83,11 +84,11 @@ public class RegistrationPage extends LoadableComponent<RegistrationPage> {
 	}
 	
 	public RegistrationPage populateMandatoryExistingDetails() {
-		txtEmail.sendKeys(NameGenerator.generateRandomEmail());
-		txtPassword.sendKeys("password");
-		txtRePassword.sendKeys("password");
-		txtFirstName.sendKeys(NameGenerator.getRandomFirstName());
-		txtLastName.sendKeys(NameGenerator.getRandomLastName());
+		txtEmail.sendKeys(ConfigReader.getProperty("error.email"));
+		txtPassword.sendKeys(ConfigReader.getProperty("error.password"));
+		txtRePassword.sendKeys(ConfigReader.getProperty("error.password"));
+		txtFirstName.sendKeys(ConfigReader.getProperty("error.firstname"));
+		txtLastName.sendKeys(ConfigReader.getProperty("error.lastname"));
 		btnSubmit.click();
 		return this;		
 	}

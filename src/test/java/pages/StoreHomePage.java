@@ -19,6 +19,8 @@ public class StoreHomePage extends BasePage {
 	@FindBy (xpath ="//a[text()='My Account']")
 	WebElement myAccountLink;
 
+	@FindBy (xpath ="//h3")
+	WebElement myAccountHeader;
 
 	public StoreHomePage(WebDriver driver) {
 		super(driver);
@@ -43,6 +45,10 @@ public class StoreHomePage extends BasePage {
 
 	public String getPageTitleAfterLogin() {
 		return driver.getTitle();
+	}
+	
+	public String checkLogin() {
+		return myAccountHeader.getText();
 	}
 
 	public void closeBrowser() {

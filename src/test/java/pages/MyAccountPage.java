@@ -10,9 +10,21 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.ConfigReader;
+
 public class MyAccountPage extends LoadableComponent<MyAccountPage> {
 	@FindBy (xpath ="//button[text()='Register']")
 	WebElement registerLink;
+	
+	@FindBy (id="account_sign_in_form_email_id")
+	WebElement userEmail;
+	
+	@FindBy (id="account_sign_in_form_passwd_id")
+	WebElement userPassword;
+	
+	@FindBy (xpath ="//input[@type='submit']")
+	WebElement signIn;
+	
 	Logger log;
 	private WebDriver driver;
 	private WebDriverWait wait;
@@ -31,6 +43,20 @@ public class MyAccountPage extends LoadableComponent<MyAccountPage> {
 		registerLink.click();
 		log.info("After registeration click");
 		return new RegistrationPage(driver);
+	}
+	
+	public StoreHomePage validLogin() {
+		userEmail.sendKeys(ConfigReader.getProperty("success.email"));
+		userPassword.sendKeys(ConfigReader.getProperty("success.password"));
+		signIn.click();
+		return new StoreHomePage(driver);
+	}
+
+	public StoreHomePage invalidLogin() {
+		userEmail.sendKeys(ConfigReader.getProperty("error.email"));
+		userPassword.sendKeys(ConfigReader.getProperty("error.password"));
+		signIn.click();
+		return new StoreHomePage(driver);
 	}
 
 	public String getPageTitleAfterLogin() {

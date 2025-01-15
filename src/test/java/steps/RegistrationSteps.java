@@ -12,6 +12,7 @@ import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.MyAccountPage;
 import pages.StoreHomePage;
 import utils.DriverManager;
 
@@ -66,9 +67,11 @@ public class RegistrationSteps {
 	
 	@Then("^user should see the registration error message$")
 	public void confirm_registration_error() throws Throwable {
-		WebElement successMessage = driver.findElement(By.xpath("//div[text()='Account created successfully. You are now registered.']"));
+		WebElement successMessage = driver.findElement(By.xpath("//div[text()='This account name is already taken. Please choose a different account name.']"));
 		
-		assertTrue(successMessage.isDisplayed(),"Success message not displayed");
+		assertTrue(successMessage.isDisplayed(),"Error message not displayed");
 		DriverManager.quitDriver();
 	}
+	
+	
 }
