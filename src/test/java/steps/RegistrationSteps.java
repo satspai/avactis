@@ -7,12 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.MyAccountPage;
 import pages.StoreHomePage;
 import utils.DriverManager;
 
@@ -28,13 +25,13 @@ public class RegistrationSteps {
 	@When("^user navigates to signin page$")
 	public void navigate_to_register_page() throws Throwable {
 		StoreHomePage storeHomePage = new StoreHomePage(driver);
-		storeHomePage.naviagetToSignInPage();
+		storeHomePage.goToSignInPage();
 	}
 	
 	@When("^user navigates to registration page and registers with new data$")
 	public void Do_registeration_new_data() throws Throwable {
 		StoreHomePage storeHomePage = new StoreHomePage(driver);
-		storeHomePage.navigateToMyAccountPage()
+		storeHomePage.goToMyAccountPage()
 		.navigateToRegisterPage()
 		.populateMandatoryNewDetails();
 	}
@@ -42,7 +39,7 @@ public class RegistrationSteps {
 	@When("^user navigates to registration page and registers with existing data$")
 	public void Do_registeration_existing_data() throws Throwable {
 		StoreHomePage storeHomePage = new StoreHomePage(driver);
-		storeHomePage.navigateToMyAccountPage()
+		storeHomePage.goToMyAccountPage()
 		.navigateToRegisterPage()
 		.populateMandatoryExistingDetails();
 	}

@@ -11,14 +11,14 @@ public class RegistrationTests extends BaseTest{
 
 	//@Test
 	public void navigateToSignInPage() {
-		storeHomePage.naviagetToSignInPage();
+		storeHomePage.goToSignInPage();
 
 	}
 
 
 	@Test(dataProvider = "dataFromXLS", dataProviderClass = DataProviders.class)
 	public void registerNewUser(String email,String pass, String repass, String fristName, String lastName) {
-		storeHomePage.navigateToMyAccountPage()
+		storeHomePage.goToMyAccountPage()
 					.navigateToRegisterPage()
 					.populateDetails(email, pass, repass, fristName, lastName);
 	}
