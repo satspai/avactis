@@ -30,7 +30,8 @@ import jxl.Workbook;
 public class DataProviders {
 	@DataProvider(name = "dataFromXLS")
 	public Object[][] provideDataFromXLS() {
-		Object[][] dataFromXLS = readDataFromXLS("src/test/resources/data/dataxls1.xls", "login", "Marker");
+		//Object[][] dataFromXLS = readDataFromXLS("src/test/resources/data/dataxls1.xls", "login", "Marker");
+		Object[][] dataFromXLS = readDataFromXLS("src/test/resources/data/dataxls1.xls", "products", "Marker");
 		return dataFromXLS;
 	}
 

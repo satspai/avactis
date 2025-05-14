@@ -2,25 +2,18 @@ package tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import pages.StoreHomePage;
 import utils.DataProviders;
 
-public class RegistrationTests extends BaseTest{
+public class PurchaseTests extends BaseTest{
 	StoreHomePage storeHomePage;
-
-	//@Test
-	public void navigateToSignInPage() {
-		storeHomePage.goToSignInPage();
-
-	}
 
 
 	@Test(dataProvider = "dataFromXLS", dataProviderClass = DataProviders.class)
-	public void registerNewUser(String email,String pass, String repass, String firstName, String lastName) {
-		storeHomePage.goToMyAccountPage()
-					.navigateToRegisterPage()
-					.populateDetails(email, pass, repass, firstName, lastName);
+	public void registerNewUser(String mainmenu,String submenu, String productid,String paymentid, String shipmentid, String moreflag) {
+
+		storeHomePage.goToProductPageUsingMenuandSubMenu(mainmenu,submenu)
+				.placeOrder(productid,paymentid,shipmentid,moreflag);;
 	}
 
 	@BeforeMethod(alwaysRun = true)

@@ -15,7 +15,8 @@ import utils.WaitTool;
 import java.time.Duration;
 
 public class ProductPage extends LoadableComponent<ProductPage> {
-
+	@FindBy (xpath ="//a[@href='cart.php']")
+	WebElement link_myCart;
 
 	Logger log;
 	private WebDriver driver;
@@ -33,6 +34,15 @@ public class ProductPage extends LoadableComponent<ProductPage> {
 		}
 		else {
 			log.info("Add to cart failed");
+		}
+
+		if (!moreFlag.equals("Y")) {
+			log.info("moreFlag =N found");
+			link_myCart.click();
+			CheckoutPage checkoutPage = new CheckoutPage(driver);
+			checkoutPage.checkout_shoppingCart();
+			checkoutPage.checkout_billingAndShippingAddress();
+			checkoutPage.checkout_billingAndShippingMethod(paymentId,shipmentId);
 		}
 	}
 

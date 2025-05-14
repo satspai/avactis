@@ -1,4 +1,141 @@
-2024-12-18 21:36:16,267 TRACE [main] (StoreHomePage.java:33) - Praparing to sign in
-2024-12-18 21:36:17,646 TRACE [main] (StoreHomePage.java:35) - After the sign-in click
-2024-12-18 21:36:53,325 INFO  [main] (MyAccountPage.java:30) - Clicking the registration link
-2024-12-18 21:36:55,008 INFO  [main] (MyAccountPage.java:32) - After registeration click
+2025-01-25 09:34:37,801 INFO  [main] (ProductPage.java:49) - Searching for product Id 37
+2025-01-25 09:34:38,088 INFO  [main] (ProductPage.java:57) - 37 got added to cart
+2025-01-25 09:34:38,093 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 09:34:38,093 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 09:37:49,521 INFO  [main] (ProductPage.java:49) - Searching for product Id 37
+2025-01-25 09:37:49,818 INFO  [main] (ProductPage.java:57) - 37 got added to cart
+2025-01-25 09:37:49,818 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 09:37:49,826 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 09:37:55,353 INFO  [main] (CheckoutPage.java:48) - Expected cart details[[House, M.D., 1, $23.99, $23.99]]
+2025-01-25 09:48:36,499 INFO  [main] (ProductPage.java:49) - Searching for product Id 37
+2025-01-25 09:48:36,735 INFO  [main] (ProductPage.java:57) - 37 got added to cart
+2025-01-25 09:48:36,735 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 09:55:45,365 INFO  [main] (ProductPage.java:49) - Searching for product Id 37
+2025-01-25 09:55:45,656 INFO  [main] (ProductPage.java:57) - 37 got added to cart
+2025-01-25 09:55:45,656 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 09:55:50,672 INFO  [main] (ProductPage.java:49) - Searching for product Id 31
+2025-01-25 09:55:50,956 INFO  [main] (ProductPage.java:57) - 31 got added to cart
+2025-01-25 09:55:50,964 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 09:55:50,964 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 09:55:56,536 INFO  [main] (CheckoutPage.java:48) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 09:55:56,536 INFO  [main] (CheckoutPage.java:48) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:00:21,600 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:00:21,696 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:00:21,696 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:00:23,026 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:00:23,120 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:00:23,120 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:00:23,120 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:00:24,564 INFO  [main] (CheckoutPage.java:54) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:02:23,162 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:02:23,258 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:02:23,258 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:02:24,829 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:02:24,956 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:02:24,957 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:02:24,958 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:02:26,790 INFO  [main] (CheckoutPage.java:54) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:03:35,120 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:03:35,227 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:03:35,228 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:03:36,842 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:03:36,942 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:03:36,943 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:03:36,943 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:03:38,737 INFO  [main] (CheckoutPage.java:54) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:05:37,560 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:05:37,686 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:05:37,686 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:05:39,273 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:05:39,391 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:05:39,392 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:05:39,392 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:05:40,895 INFO  [main] (CheckoutPage.java:54) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:24:17,326 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:24:17,500 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:24:17,502 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:24:18,819 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:24:18,920 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:24:18,921 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:24:18,921 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:24:20,307 INFO  [main] (CheckoutPage.java:66) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:29:42,893 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:29:42,990 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:29:42,990 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:29:44,447 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:29:44,553 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:29:44,553 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:29:44,554 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:29:46,077 INFO  [main] (CheckoutPage.java:69) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-25 20:32:22,089 INFO  [main] (ProductPage.java:50) - Searching for product Id 37
+2025-01-25 20:32:22,193 INFO  [main] (ProductPage.java:58) - 37 got added to cart
+2025-01-25 20:32:22,194 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:32:23,752 INFO  [main] (ProductPage.java:50) - Searching for product Id 31
+2025-01-25 20:32:23,837 INFO  [main] (ProductPage.java:58) - 31 got added to cart
+2025-01-25 20:32:23,837 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-25 20:32:23,837 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-25 20:32:25,255 INFO  [main] (CheckoutPage.java:69) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-27 21:22:28,302 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-01-27 21:22:28,534 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-01-27 21:22:28,535 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-27 21:22:30,109 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-01-27 21:22:30,236 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-01-27 21:22:30,237 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-27 21:22:30,237 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-27 21:22:31,967 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-27 21:23:17,497 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-01-27 21:23:17,611 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-01-27 21:23:17,611 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-27 21:23:18,902 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-01-27 21:23:19,006 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-01-27 21:23:19,007 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-27 21:23:19,007 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-27 21:23:20,486 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-01-27 21:26:05,300 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-01-27 21:26:05,458 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-01-27 21:26:05,458 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-27 21:26:06,778 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-01-27 21:26:06,884 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-01-27 21:26:06,885 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-01-27 21:26:06,885 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-01-27 21:26:08,409 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-02-04 21:25:34,222 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-02-04 21:25:34,513 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-02-04 21:25:34,513 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:25:37,344 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-02-04 21:25:37,620 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-02-04 21:25:37,622 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:25:37,623 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-02-04 21:25:40,779 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-02-04 21:29:54,789 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-02-04 21:29:55,097 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-02-04 21:29:55,099 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:29:58,524 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-02-04 21:29:58,809 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-02-04 21:29:58,809 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:29:58,811 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-02-04 21:30:01,580 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-02-04 21:37:03,927 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-02-04 21:37:04,198 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-02-04 21:37:04,200 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:37:06,763 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-02-04 21:37:06,932 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-02-04 21:37:06,932 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:37:06,933 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-02-04 21:37:09,802 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-02-04 21:47:06,911 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-02-04 21:47:07,146 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-02-04 21:47:07,147 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:47:10,225 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-02-04 21:47:10,552 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-02-04 21:47:10,553 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:47:10,553 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-02-04 21:47:13,325 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
+2025-02-04 21:49:17,875 INFO  [main] (ProductPage.java:51) - Searching for product Id 37
+2025-02-04 21:49:18,156 INFO  [main] (ProductPage.java:59) - 37 got added to cart
+2025-02-04 21:49:18,158 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:49:20,733 INFO  [main] (ProductPage.java:51) - Searching for product Id 31
+2025-02-04 21:49:21,022 INFO  [main] (ProductPage.java:59) - 31 got added to cart
+2025-02-04 21:49:21,024 INFO  [main] (ProductPage.java:33) - Add to Cart is successful
+2025-02-04 21:49:21,026 INFO  [main] (ProductPage.java:40) - moreFlag =N found
+2025-02-04 21:49:23,727 INFO  [main] (CheckoutPage.java:72) - Expected cart details[[House, M.D., 1, $23.99, $23.99], [HP TouchSmart, 1, $799.99, $799.99]]
