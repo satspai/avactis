@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import io.qameta.allure.Allure;
 
 public class BaseTest {
+	// Start of comment
 	protected WebDriver driver;
 	protected WebDriverWait wait;
 	private String url = "http://localhost/Avactis/";
